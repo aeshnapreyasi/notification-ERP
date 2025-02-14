@@ -1,0 +1,146 @@
+
+.body{
+    background-color: rgba(229, 231, 235, 1);
+     
+ }
+ :root {
+     --notification-hover: rgba(0, 0, 0, 0.03);
+ }
+ .notifications-header {
+    background-color: rgba(229, 231, 235, 1);
+    max-width: 800px;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    justify-content: space-between; /* Left & Right alignment */
+    align-items: center;
+    padding: 0 1rem;
+}
+
+ .notifications-container {
+     max-width: 800px;
+     width: 100%;
+     margin:auto;
+     padding: 20px;
+     background-color: rgba(229, 231, 235, 1);
+ }
+ 
+ .notification-item {
+     transition: background-color 0.2s ease;
+     border-radius: 8px;
+     cursor: pointer;
+     background-color: white !important;
+     border-width: 1px;
+     height: 74;
+ }
+ 
+ .notification-item:hover {
+     background-color: var(--notification-hover);
+ }
+ 
+ .notification-icon {
+     width: 36px;
+     height: 36px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+ }
+ 
+ .notification-time {
+     font-size: 0.875rem;
+     color: #6c757d;
+ }
+ 
+ .notification-title {
+     font-size: 0.95rem;
+     margin-bottom: 4px;
+ }
+ 
+ .time-divider {
+     font-size: 0.875rem;
+     color: #6c757d;
+     margin: 1.5rem 0 1rem 0;
+     font-weight: 500;
+ }
+ 
+ .icon-blue {
+     background-color: rgba(13, 110, 253, 0.1);
+     color: #0d6efd;
+ }
+ 
+ .icon-green {
+     background-color: rgba(25, 135, 84, 0.1);
+     color: #198754;
+ }
+ 
+ .icon-yellow {
+     background-color: rgba(255, 193, 7, 0.1);
+     color: #ffc107;
+ }
+ 
+ .icon-purple {
+     background-color: rgba(111, 66, 193, 0.1);
+     color: #6f42c1;
+ }
+ 
+ .icon-red {
+     background-color: rgba(220, 53, 69, 0.1);
+     color: #dc3545;
+ }
+ 
+ .icon-gray {
+     background-color: rgba(108, 117, 125, 0.1);
+     color: #6c757d;
+ }
+ 
+ /* Action Button */
+ .action-button {
+     width: 32px;
+     height: 32px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 6px;
+     border: none;
+     background: transparent;
+     color: #6c757d;
+ }
+ 
+ .action-button:hover {
+     background-color: rgba(108, 117, 125, 0.1);
+ }
+ 
+ .mark-read-button {
+     color: #6c757d;
+     background: rgba(243, 244, 246, 1);
+     border: none;
+     font-size: 0.875rem;
+     padding: 0.5rem 1rem;
+     border-radius: 6px;
+     display: block;
+     text-align: center;
+     margin: auto;
+ }
+ 
+ .profile-pic {
+     width: 41px;
+     height: 40px;
+     border-radius: 72%;
+     object-fit: cover;
+ }
+ 
+ /* Make the container responsive */
+ @media (max-width: 768px) {
+    .notifications-container {
+        width: 90%; /* Full width on small screens */
+        padding: 10px;
+    }
+
+    .notifications-header {
+        width: 100%;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+}
